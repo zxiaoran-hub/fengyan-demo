@@ -1,0 +1,1 @@
+import{r as s}from"./index-i6Fbsv63.js";function a(e,o){const n=s(e()),t=s(e());function u(){t.value={...n.value},o?.onSearch?.()}function i(){const r=e();n.value={...r},t.value={...r},o?.onReset?.()}return{draftFilters:n,appliedFilters:t,onSearch:u,onReset:i}}export{a as u};
