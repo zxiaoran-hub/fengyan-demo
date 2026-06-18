@@ -5,6 +5,16 @@
     <link rel="icon" type="image/png" href="./fengyan-logo-transparent.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>绿电健康服务平台</title>
+    <script>
+      (function() {
+        var hasSession = localStorage.getItem('xToken');
+        if (!hasSession || hasSession.startsWith('prototype-token-') || localStorage.getItem('prototypeUsername')) {
+          localStorage.setItem('xToken', 'prototype-token-auto');
+          localStorage.setItem('prototypeUsername', 'admin');
+          localStorage.setItem('userId', 'prototype-admin');
+        }
+      })();
+    </script>
     <script type="module" crossorigin src="./assets/index-i6Fbsv63.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-DEPAVmb4.css">
   </head>
